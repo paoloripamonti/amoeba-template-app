@@ -1,0 +1,20 @@
+%section#header.appear
+.navbar.navbar-fixed-top{"data-0" => "line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);", "data-300" => "line-height:60px; height:60px; background-color:rgba(0,0,0,1);", :role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.fa.fa-bars.color-white
+      %h1
+        %a.navbar-brand{"data-0" => "line-height:90px;", "data-300" => "line-height:50px;", :href => "index.html"}
+          Amoeba
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav{"data-0" => "margin-top:20px;", "data-300" => "margin-top:5px;"}
+        %li.active
+          %a{:href => root_path	} Home
+        %li
+          %a{:href => "#section-about"} About
+        %li
+          %a{:href => "#section-works"} Portfolio
+        %li
+          %a{:href => "#section-contact"} Contact
+    / /.navbar-collapse
